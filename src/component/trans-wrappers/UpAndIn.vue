@@ -4,8 +4,10 @@
   </trans>
 </template>
 
+
 <script>
 import Trans from "VUE_COMPONENT/trans/Index.vue";
+
 
 export default {
   components: {
@@ -14,7 +16,8 @@ export default {
 };
 </script>
 
-<style lang="sass">
+
+<style lang="sass" scoped>
 
 .up-and-in-enter-active, .up-and-in-leave-active
   transition: transform 0.5s linear
@@ -26,4 +29,3 @@ export default {
   transform: translateY(500%)
 
 </style>
-

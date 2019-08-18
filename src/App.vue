@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import Vue from "vue";
 import LayoutHeader from "VUE_COMPONENT/layout/header/Index.vue";
 import { mapState, mapActions } from "vuex";
 import { transDefault } from "SRC/transitions";

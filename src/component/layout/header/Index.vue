@@ -7,8 +7,10 @@
   </header>
 </template>
 
+
 <script>
 import TransLink from "VUE_COMPONENT/trans-link/Index.vue";
+
 
 export default {
   name: "layout-header",

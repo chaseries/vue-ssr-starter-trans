@@ -2,9 +2,11 @@
   <a @click="handleClick" :href="to"><slot></slot></a>
 </template>
 
+
 <script>
 import { mapActions } from "vuex";
 import Vue from "vue";
+
 
 export default {
   props: {

@@ -1,5 +1,6 @@
 <template>
   <transition
+    :appear="appear"
     :name="_name"
     @beforeLeave="beforeLeave"
     @beforeEnter="beforeEnter">
@@ -7,8 +8,10 @@
   </transition>
 </template>
 
+
 <script>
 import { mapState } from "vuex";
+
 
 export default {
   name: "component-trans",
@@ -33,13 +36,16 @@ export default {
       transition: state => state.trans.transition,
       transName: state => state.trans.transition.name,
       transShow: state => state.trans.state,
-      transShowOnce: state => state.trans.showOnce
+      transShowOnce: state => state.trans.initFlag
     }),
     state () {
-      return this.initOnly === false ? this.transShow : this.transShowOnce;
+      return this.initOnly === true ? this.transShowOnce : this.transShow;
     },
     _name () {
       return this.name === undefined ? this.transName : this.name;
+    },
+    appear () {
+      return !this.initOnly;
     }
   },
   methods: {
