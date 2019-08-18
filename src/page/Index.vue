@@ -1,17 +1,19 @@
 <template>
   <div>
-    <trans-test-component></trans-test-component>
+    <up-and-in>
+      <div>I'm homepage content that should come up and in on page enter and go down and out on page leave.</div>
+    </up-and-in>
   </div>
 </template>
 
 <script>
-import TransTestComponent from "VUE_COMPONENT/trans-test-component/Index.vue";
+import UpAndIn from "VUE_COMPONENT/trans-wrappers/UpAndIn.vue";
 
 
 export default {
   name: "page-index",
   components: {
-    TransTestComponent
+    UpAndIn
   }
 };
 </script>

@@ -4,7 +4,9 @@
     :name="_name"
     @beforeLeave="beforeLeave"
     @beforeEnter="beforeEnter">
-    <slot v-if="state"></slot>
+    <div v-show="state">
+      <slot></slot>
+    </div>
   </transition>
 </template>
 
