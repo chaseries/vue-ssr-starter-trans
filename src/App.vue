@@ -49,9 +49,6 @@ export default {
   },
   mounted () {
     this.mountedHook();
-    setTimeout(() => {
-      console.log(this.$store.state.trans);
-    });
   }
 };
 </script>
