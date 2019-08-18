@@ -3,7 +3,8 @@
 ## To use:
 
 ```
-$ npm run watch
+$ npm i
+$ npm run watch  `#(or "npm run build")`
 $ node server.js <port number> `# defaults to 8080`
 ```
 
